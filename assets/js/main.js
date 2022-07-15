@@ -44,7 +44,7 @@ function blobToDataURI(blob, callback) {
     }
     reader.readAsDataURL(blob);
 }
-var url = "assets/img/bg.jpg";
+var url = "https://originimg.ezh.ink/2022/07/15/62d0e5a218d1a.jpg";
 var xhr = new XMLHttpRequest();
 xhr.open('GET', url, true);
 xhr.responseType = "blob";
