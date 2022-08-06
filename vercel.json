@@ -1,0 +1,27 @@
+{
+    "public": true,
+    "headers": [{
+        "source": "/(.*)",
+        "headers": [{
+                "key": "Access-Control-Allow-Origin",
+                "value": "https://iyuan.ltd"
+            },
+            {
+                "key": "X-Content-Type-Options",
+                "value": "nosniff"
+            },
+            {
+                "key": "Feature-Policy",
+                "value": "*"
+            },
+            {
+                "key": "Referrer-Policy",
+                "value": "origin"
+            },
+            {
+                "key": "Cache-Control",
+                "value": "public, max-age=86400, immutable"
+            }
+        ]
+    }]
+}
