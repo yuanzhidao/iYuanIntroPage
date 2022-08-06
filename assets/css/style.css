@@ -51,7 +51,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: 11rem;
-    margin: 2rem 2rem 0rem 2rem;
+    margin-top: 2rem;
     position: relative;
 }
 
@@ -65,7 +65,6 @@ a:hover {
     height: 10rem;
     box-shadow: var(--card-box-shadow);
     overflow: hidden;
-    margin-left: 1rem;
 }
 
 .name {
@@ -80,7 +79,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 15rem;
+    margin-left: 14rem;
 }
 
 .navbar {
@@ -123,7 +122,6 @@ hr {
 .footer {
     display: flex;
     flex-direction: row;
-    margin-left: 3rem;
     flex-wrap: wrap;
     margin-top: -.5rem;
 }
@@ -142,7 +140,7 @@ hr {
 }
 
 .project {
-    margin: 0 3rem 0 3.5rem;
+    margin-left: 4rem;
 }
 
 .project ul>li {
