@@ -9,13 +9,13 @@ html {
 }
 
 body {
-    display: flex;
     background-image: url(../img/bg.jpg);
-    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -24,7 +24,6 @@ body {
 
 a {
     background-color: transparent;
-    position: absolute;
     color: var(--secondary);
 }
 
@@ -36,6 +35,8 @@ a:hover {
 
 .card-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -43,33 +44,31 @@ a:hover {
     border-radius: 1.5rem;
     width: 720px;
     height: 27rem;
-    flex-direction: column;
-    align-items: center;
 }
 
 .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 11rem;
     margin-top: 2rem;
-    position: relative;
+    flex-wrap: nowrap;
 }
 
 .avatar img {
     height: 10rem;
+    border-radius: 50%;
 }
 
 .avatar {
     border-radius: 50%;
-    position: absolute;
     height: 10rem;
+    width: 10rem;
     box-shadow: var(--card-box-shadow);
-    overflow: hidden;
 }
 
 .name {
-    padding-top: .3rem;
-    padding-bottom: .7rem;
+    margin-top: .3rem;
+    margin-bottom: .7rem;
     font-size: 2.7rem;
     color: #475555;
     font-weight: 700;
@@ -78,8 +77,7 @@ a:hover {
 .info {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 14rem;
+    margin-left: 4rem;
 }
 
 .navbar {
@@ -88,6 +86,7 @@ a:hover {
     padding-left: .2rem;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .navbar a {
@@ -136,16 +135,16 @@ hr {
 }
 
 .contact p {
-    width: 11.5rem;
+    width: 100%
 }
 
 .project {
-    margin-left: 4rem;
+    margin-left: 5rem;
 }
 
-.project ul>li {
+ul>li {
     margin-bottom: .5rem;
-    width: 19rem;
+    width: 100%;
 }
 
 .copyright {
@@ -153,6 +152,53 @@ hr {
     color: #475555;
 }
 
-@media screen and (max-width: 768px) {
-    /* 咕咕咕 */
+@media screen and (max-width: 720px) {
+    .card-container {
+        width: 95%;
+        min-width: 370px;
+        height: 100%;
+    }
+    .header {
+        width: 85%;
+    }
+    .avatar {
+        width: auto;
+        height: 70%;
+    }
+    .avatar img {
+        height: 100%;
+    }
+    .info {
+        margin-left: 1.5rem;
+    }
+    .navbar {
+        margin-left: -8.5rem;
+        margin-right: -.5rem;
+        padding-left: 0;
+    }
+    .navbar a {
+        font-size: 16px;
+        margin-right: .5rem;
+    }
+    .name {
+        margin-bottom: 0;
+    }
+    .desc {
+        font-size: 14px;
+        line-height: 1.5rem;
+        margin-bottom: .3rem;
+    }
+    .footer {
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .project {
+        margin-left: 0;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .project h2 {
+        margin-top: 0;
+    }
 }
