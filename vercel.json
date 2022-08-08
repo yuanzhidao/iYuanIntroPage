@@ -11,10 +11,6 @@
                 "value": "nosniff"
             },
             {
-                "key": "Feature-Policy",
-                "value": "*"
-            },
-            {
                 "key": "Referrer-Policy",
                 "value": "origin"
             },
