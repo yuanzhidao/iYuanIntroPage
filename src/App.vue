@@ -58,7 +58,7 @@ html {
 }
 
 body {
-	background-image: url(./assets/img/bg.jpg);
+	background-image: url(/assets/img/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
