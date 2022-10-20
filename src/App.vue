@@ -10,10 +10,10 @@
 				<div class="name">iYuan</div>
 				<div class="desc">😊 高一学生、前端小白一枚，未来还请多多指教！</div>
 				<div class="navbar">
-					<a href="https://y.ezh.ink" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-newspaper"></i>博客</a>
-					<a href="https://iyuanlab.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-flask"></i>实验室</a>
-					<a href="https://y.ezh.ink/bber" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-comment-dots"></i>即刻</a>
-					<a href="https://y.ezh.ink/about" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-mug-saucer"></i>关于</a>
+					<a href="https://blog.iyuan.ltd" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-newspaper"></i>博客</a>
+					<a href="https://lab.iyuan.ltd" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-flask"></i>实验室</a>
+					<a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-comment-dots"></i>即刻</a>
+					<a href="https://blog.iyuan.ltd/about" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-mug-saucer"></i>关于</a>
 				</div>
 			</div>
 		</div>
@@ -69,6 +69,7 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	margin: 0;
+	backdrop-filter: blur(2px);
 }
 
 a {
@@ -93,7 +94,7 @@ a:hover {
 	border-radius: 1.5rem;
 	width: 720px;
 	height: 27rem;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 250, 250, 0.65);
 }
 
 .header {
