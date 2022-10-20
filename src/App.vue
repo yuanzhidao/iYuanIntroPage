@@ -39,7 +39,7 @@
 			</div>
 		</div>
 
-		<div class="copyright">
+		<div class="copyright mt-2 mb-4">
 			<p>© 2022 iYuan</p>
 			<p><a href="https://beian.miit.gov.cn">沪ICP备2022026478号-3</a></p>
 		</div>
@@ -105,6 +105,7 @@ a:hover {
 }
 
 .avatar img {
+	max-width: none;
 	height: 10rem;
 	border-radius: 50%;
 }
@@ -172,11 +173,14 @@ hr {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-top: -0.5rem;
+	margin-top: 1rem;
 }
 
 .footer h2 {
-	margin-bottom: -0.4rem;
+	margin-bottom: 0.5rem;
+	font-size: 24px;
+	color: #475555;
+	font-weight: 600;
 }
 
 .footer p {
