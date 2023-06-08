@@ -1,47 +1,49 @@
-<script setup></script>
+<script setup>
+import { RouterLink, RouterView } from 'vue-router';
+</script>
 
 <template>
-  <div class="card-container">
-    <div class="header">
-      <div class="avatar">
-        <img src="https://q4.qlogo.cn/headimg_dl?dst_uin=208823829&spec=640" alt="avatar" />
-      </div>
-      <div class="info">
-        <div class="name">iYuan</div>
-        <div class="desc">😊 高一学生、前端小白一枚，未来还请多多指教！</div>
-        <div class="navbar">
-          <a href="https://blog.iyuan.ltd" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-newspaper"></i>博客</a>
-          <a href="https://lab.iyuan.ltd" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-flask"></i>实验室</a>
-          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-comment-dots"></i>即刻</a>
-          <a href="https://blog.iyuan.ltd/about" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-mug-saucer"></i>关于</a>
+  <header class="snap-start snap-always">
+    <div class="drawer lg:hidden">
+      <input id="drawer-1" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col">
+        <!-- Navbar -->
+        <div class="w-full navbar bg-base-100">
+          <div class="flex-1 lg:hidden">
+            <label for="drawer-1" class="btn btn-square btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </label>
+          </div>
+          <div class="flex-none hidden lg:block">
+            <ul class="menu menu-horizontal">
+              <li><RouterLink to="/">主页</RouterLink></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-
-    <hr />
-
-    <div class="footer">
-      <div class="contact">
-        <h2>📮 联系我</h2>
-        <ul>
-          <li>Email：<a href="mailto:yuan@iyuan.ltd">yuan@iyuan.ltd</a></li>
-          <li>Github：<a href="https://github.com/yuanzhidao">@yuanzhidao</a></li>
-          <li>QQ：208823829</li>
-        </ul>
-      </div>
-      <div class="project">
-        <h2>📦 项目</h2>
-        <ul>
-          <li><a href="https://mc-docs.vercel.app" target="_blank" rel="noopener noreferrer">Mc-docs：Minecraft 小白快速入门文档</a></li>
-          <li>（咕咕咕）</li>
-          <li>（咕咕咕）</li>
+      <div class="drawer-side">
+        <label for="drawer-1" class="drawer-overlay"></label>
+        <ul class="menu p-4 w-[14rem] h-full bg-base-200">
+          <!-- Sidebar content here -->
+          <li>
+            <RouterLink to="/"
+              ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>
+              主页</RouterLink
+            >
+          </li>
         </ul>
       </div>
     </div>
+  </header>
 
-    <div class="copyright mt-2 mb-4">
-      <p>© 2022 iYuan</p>
-      <p><a href="https://beian.miit.gov.cn">沪ICP备2022026478号-3</a></p>
+  <RouterView />
+
+  <footer class="snap-start snap-always">
+    <div class="font-light text-zinc-500 p-4 mt-8 mb-[10rem]">
+      <p>2023 © iYuan</p>
+      <a href="https://beian.miit.gov.cn" class="hover:underline">沪ICP备2022026478号-3</a>
     </div>
-  </div>
+  </footer>
 </template>
